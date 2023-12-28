@@ -23,10 +23,10 @@ function readFirst(filename){
         }
 
         else{
-            const Mcontent = Modified(data);
+            const mainContent = Modified(data);
         
 
-        fs.writeFile(filename , Mcontent, (error,data)=>{
+        fs.writeFile(filename , mainContent, (error,data)=>{
             if(error){
                 console.log("cant write the data");
             }
@@ -38,8 +38,8 @@ function readFirst(filename){
 }
 
 function Modified(rd){
-    let voo=rd.replace(/ \s/g,"");
-    return voo;
+    let finalStr=rd.replace(/ \s/g,"");
+    return finalStr;
 }
 
 readFirst("main.text")
