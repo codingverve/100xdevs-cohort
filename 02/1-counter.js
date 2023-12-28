@@ -13,13 +13,6 @@ console.log(`${Hours} : ${Minutes} : ${Sec}`);
 
 let counter = 0;
 
-// function updateCounter(){
-//     counter ++;
-//     console.log("counter : " + counter);
-//     setTimeout(updateCounter,1000);
-// }
-
-// updateCounter();
 
 function updateCounter(){
     return new Promise((resolve,reject)=>{
